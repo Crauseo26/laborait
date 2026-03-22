@@ -28,7 +28,7 @@ export function SocialProofSection() {
                   </div>
                 </div>
                 <p className="text-neutral-600 flex-1">
-                  "[Testimonial Text Here: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.]"
+                  &quot;[Testimonial Text Here: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.]&quot;
                 </p>
               </Card>
             </div>

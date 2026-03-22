@@ -93,6 +93,9 @@ WORKING STYLE
 
   * Explicitly warn and suggest a better alternative.
 
+DOCUMENTATION AS CODE
+- Every new feature must include a brief update to the internal `ARCHITECTURE.md` file if it introduces a new pattern or dependency.
+
 ────────────────────────────────────────
 DEFAULT TECHNICAL DECISIONS
 ────────────────────────────────────────
@@ -139,3 +142,9 @@ TRUST & ACCESSIBILITY
 CODE SIMPLICITY
 - No Global State: Since there's no auth or complex data, use pure props. Do NOT install Redux, Zustand, or even use Context unless strictly necessary for a Phase 2 feature.
 - No Framer Motion: Use CSS transitions/animations for simple entrance effects to keep JS execution low.
+
+A/B TESTING & PROFILE SWITCHING (FUTURE SCOPE)
+- Pure Edge Middleware Rewrites: Whenever A/B testing or URL-parameter based profile switching is required in the future, it MUST be done using Next.js Edge Middleware (`middleware.ts`).
+- Zero Client-Side DOM Swapping: Completely avoid client-side testing libraries to prevent CLS (Cumulative Layout Shift) or bundle bloating.
+- Pre-built Static Serving: Middleware should intercept URL params (e.g. `?profile=A`) and use `NextResponse.rewrite()` to instantly serve pre-compiled SSG variants of pages without changing the user's visible URL.
+- SEO Canonicalization: All structurally diverging A/B variants MUST point their `<link rel="canonical">` tag back to the root production URL to avoid duplicate content penalties from search engines.
