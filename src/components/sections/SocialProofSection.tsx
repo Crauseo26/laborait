@@ -16,20 +16,22 @@ export function SocialProofSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto snap-x snap-mandatory pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
           {testimonials.map((i) => (
-            <Card key={i} className="flex flex-col space-y-4">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-full bg-neutral-300"></div>
-                <div>
-                  <div className="h-4 w-24 bg-neutral-300 rounded mb-2"></div>
-                  <div className="h-3 w-16 bg-neutral-200 rounded"></div>
+            <div key={i} className="snap-center shrink-0 w-[85%] sm:w-[60%] md:w-auto">
+              <Card className="flex flex-col space-y-4 h-full">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 rounded-full bg-neutral-300 shrink-0"></div>
+                  <div>
+                    <div className="h-4 w-24 bg-neutral-300 rounded mb-2"></div>
+                    <div className="h-3 w-16 bg-neutral-200 rounded"></div>
+                  </div>
                 </div>
-              </div>
-              <p className="text-neutral-600 flex-1">
-                "[Testimonial Text Here: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.]"
-              </p>
-            </Card>
+                <p className="text-neutral-600 flex-1">
+                  "[Testimonial Text Here: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.]"
+                </p>
+              </Card>
+            </div>
           ))}
         </div>
       </div>

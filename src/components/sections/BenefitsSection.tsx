@@ -16,19 +16,21 @@ export function BenefitsSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex md:grid md:grid-cols-2 gap-6 md:gap-8 overflow-x-auto snap-x snap-mandatory pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
           {features.map((feature) => (
-            <Card key={feature} className="p-6 md:p-8">
-              <div className="w-12 h-12 bg-neutral-200 rounded-lg mb-6 flex items-center justify-center">
-                <span className="text-neutral-400 text-xs">[Icon]</span>
-              </div>
-              <h3 className="text-xl font-semibold text-primary-900 mb-3">
-                [Beneficio {feature}]
-              </h3>
-              <p className="text-neutral-600">
-                [Descripción del beneficio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.]
-              </p>
-            </Card>
+            <div key={feature} className="snap-center shrink-0 w-[85%] sm:w-[60%] md:w-auto">
+              <Card className="p-6 md:p-8 h-full">
+                <div className="w-12 h-12 bg-neutral-200 rounded-lg mb-6 flex items-center justify-center">
+                  <span className="text-neutral-400 text-xs">[Icon]</span>
+                </div>
+                <h3 className="text-xl font-semibold text-primary-900 mb-3">
+                  [Beneficio {feature}]
+                </h3>
+                <p className="text-neutral-600">
+                  [Descripción del beneficio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.]
+                </p>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
