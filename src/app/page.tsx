@@ -1,5 +1,6 @@
 import { Header } from "@/components/ui/Header";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { MirrorSection } from "@/components/sections/MirrorSection";
 import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col w-full pb-20 sm:pb-0 relative">
       <Header />
       <HeroSection />
+      <MirrorSection />
       <SocialProofSection />
       <BenefitsSection />
       <FAQSection />

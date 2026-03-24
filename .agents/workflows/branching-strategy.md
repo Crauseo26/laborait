@@ -18,7 +18,7 @@ git checkout -b <branch-name>
 ```
 
 ### Phase 2: Post-Implementation (Validation & PR Simulation)
-1. After writing the code, execute the `.agents/workflows/performance-seo-validation.md` workflow. You may only proceed to Phase 2 if the validation yields `0 errors`.
+1. After writing the code, execute BOTH the `.agents/workflows/performance-seo-validation.md` AND `.agents/workflows/design-validation.md` workflows. You may only proceed to Phase 2 if both validations yield zero errors and pass all manual design audits.
 2. Stage and commit your changes onto the new branch using descriptive conventional commits.
 ```bash
 git add .
@@ -39,3 +39,5 @@ git push origin develop
 git push origin --delete <branch-name>
 git branch -d <branch-name>
 ```
+
+6. **Context Update**: Immediately after merging, you MUST execute the `.agents/workflows/update-context.md` workflow to record the completed task in the context memory document.
