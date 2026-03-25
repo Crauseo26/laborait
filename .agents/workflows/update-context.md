@@ -3,7 +3,7 @@ description: Context Memory Update Workflow
 ---
 // turbo-all
 
-> **Trigger Hook**: Execute this workflow IMMEDIATELY AFTER a successful execution of `.agents/workflows/branching-strategy.md` Phase 2 (specifically, after the new branch has been successfully merged into `develop`).
+> **Trigger Hook**: Execute this workflow *DURING* the verification phase of a feature, *BEFORE* committing changes to the `feature/*` branch. This ensures the context memory updates are grouped inside the very same commit as the code changes.
 
 ### Update Memory Tasks
 

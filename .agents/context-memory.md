@@ -5,8 +5,8 @@ Este documento sirve como la memoria persistente del proyecto. El agente co-desa
 ## Últimas 3 Tareas Finalizadas
 *(El flujo de trabajo `/update-context` se encarga de rotar estas tareas)*
 
-1. **Implementación de S3 (Quiebre):** Se desarrolló el componente `LegalArgumentSection.tsx` respetando las reglas de UX/UI para el B1. Se usaron tarjetas con los montos referenciales y una transición visual fluida sin librerías de animación.
-2. *(Espacio disponible para la penúltima tarea)*
+1. **Implementación de S4 (Prueba Social):** Se reconstruyó el componente `SocialProofSection.tsx` eliminando carruseles e implementando grid nativo y tarjetas enfocadas en casos B1 con stats reales. Todo optimizado <100kb con SVGs locales.
+2. **Implementación de S3 (Quiebre):** Se desarrolló el componente `LegalArgumentSection.tsx` respetando las reglas de UX/UI para el B1. Se usaron tarjetas con los montos referenciales y una transición visual fluida sin librerías de animación.
 3. *(Espacio disponible para la antepenúltima tarea)*
 
 ## Lecciones Aprendidas (Máx 20 ítems)
