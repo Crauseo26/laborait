@@ -32,12 +32,17 @@ git push -u origin <branch-name>
 ```bash
 git checkout develop
 git merge <branch-name> --no-ff -m "Merge branch '<branch-name>': Implemented [descriptive functionality]"
+```
+
+5. **Push a Develop**: Como paso crítico final, SIEMPRE asegúrate de pushear la rama `develop` actualizada al repositorio remoto para disparar el CI/CD en Vercel.
+```bash
 git push origin develop
 ```
-5. **Clean Up**: Delete the remote and local feature branches. The remote repository must remain strictly clean, containing ONLY `master` and `develop`.
+
+6. **Clean Up**: Delete the remote and local feature branches. The remote repository must remain strictly clean, containing ONLY `master` and `develop`.
 ```bash
 git push origin --delete <branch-name>
 git branch -d <branch-name>
 ```
 
-6. **Context Update**: Immediately after merging, you MUST execute the `.agents/workflows/update-context.md` workflow to record the completed task in the context memory document.
+7. **Context Update**: Immediately after merging, you MUST execute the `.agents/workflows/update-context.md` workflow to record the completed task in the context memory document.
