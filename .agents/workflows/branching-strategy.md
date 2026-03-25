@@ -18,7 +18,13 @@ git checkout -b <branch-name>
 ```
 
 ### Phase 2: Post-Implementation (Validation & PR Simulation)
-1. After writing the code, execute BOTH the `.agents/workflows/performance-seo-validation.md` AND `.agents/workflows/design-validation.md` workflows. You may only proceed to Phase 2 if both validations yield zero errors and pass all manual design audits.
+1. **Local Validations**: After writing the code, execute BOTH the `.agents/workflows/performance-seo-validation.md` AND `.agents/workflows/design-validation.md` workflows.
+Además, SIEMPRE ejecuta localmente las validaciones de CI:
+```bash
+npm run typecheck
+npm run lint
+```
+You may only proceed if both validations yield zero errors and pass all manual design audits.
 
 2. **Context Update**: Execute the `.agents/workflows/update-context.md` workflow to record the newly completed task in the context memory document *before* staging files.
 
