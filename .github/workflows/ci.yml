@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Run Linter
-        run: npx next lint
+        run: npm run lint
 
       - name: Run Typecheck
         run: npm run typecheck
