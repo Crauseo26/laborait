@@ -1,6 +1,7 @@
 import { Header } from "@/components/ui/Header";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { MirrorSection } from "@/components/sections/MirrorSection";
+import { LegalArgumentSection } from "@/components/sections/LegalArgumentSection";
 import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <MirrorSection />
+      <LegalArgumentSection />
       <SocialProofSection />
       <BenefitsSection />
       <FAQSection />
