@@ -10,18 +10,16 @@ export function FloatingCTA() {
   useEffect(() => {
     const handleScroll = () => {
       const hero = document.getElementById("hero-section");
-      const HEADER_HEIGHT = 64; // Account for the 4rem sticky header
-      
-      if (hero) {
-        const rect = hero.getBoundingClientRect();
-        // Show CTA only when the bottom of the hero scrolls up past the header
-        // i.e., the hero is completely visually hidden from the viewport.
-        setIsVisible(rect.bottom <= HEADER_HEIGHT);
-      }
+      const footer = document.querySelector("footer");
+      const HEADER_HEIGHT = 64;
+
+      const heroScrolled = hero ? hero.getBoundingClientRect().bottom <= HEADER_HEIGHT : false;
+      const footerVisible = footer ? footer.getBoundingClientRect().top < window.innerHeight : false;
+
+      setIsVisible(heroScrolled && !footerVisible);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    // Run once on mount to handle cases where user loads scrolled down
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
