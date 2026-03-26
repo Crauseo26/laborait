@@ -102,7 +102,7 @@ export function SocialProofSection() {
           </p>
           <Link 
             href="https://wa.me/message/XXXX"
-            className="group inline-flex items-center text-lg md:text-xl font-bold text-secondary-base hover:text-white transition duration-300 bg-primary-800/50 hover:bg-primary-800 border border-primary-700 hover:border-secondary-base px-6 py-4 rounded-xl"
+            className="group inline-flex items-center text-lg md:text-xl font-bold text-primary-600 hover:text-white transition duration-300 bg-primary-800/50 hover:bg-primary-800 border border-primary-800 hover:border-primary-600 px-6 py-4 rounded-xl"
           >
             → Escribinos por WhatsApp y evaluamos tu situación sin compromiso.
           </Link>
