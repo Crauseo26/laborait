@@ -58,7 +58,7 @@ export function MirrorSection() {
             <p className="text-[1.1rem] md:text-xl text-neutral-300">
               Esos miedos son razonables y son exactamente los que tenian los mas de 70 choferes que hoy ya cobraron su reclamo.
             </p>
-            <p className="text-[1.1rem] md:text-xl text-secondary-base mt-2 md:mt-3">
+            <p className="text-[1.1rem] md:text-xl text-primary-600 mt-2 md:mt-3">
               La diferencia entre ellos y los que no cobraron nada fue una sola: <span className="font-bold">decidieron averiguar.</span>
             </p>
           </div>
