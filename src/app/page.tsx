@@ -11,7 +11,7 @@ import { FloatingCTA } from "@/components/ui/FloatingCTA";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col w-full pb-20 sm:pb-0 relative">
+    <main className="min-h-screen flex flex-col w-full relative">
       <Header />
       <HeroSection />
       <MirrorSection />
