@@ -44,7 +44,7 @@ export function SocialProofSection() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16 md:mb-24">
           {stats.map((stat, idx) => (
             <div key={idx} className="flex flex-col items-center justify-center text-center p-4 border border-primary-800 bg-primary-800/20 rounded-2xl shadow-sm">
-              <span className="text-3xl md:text-4xl font-extrabold text-secondary-base mb-1">{stat.value}</span>
+              <span className="text-3xl md:text-4xl font-extrabold text-primary-600 mb-1">{stat.value}</span>
               <span className="text-sm md:text-base font-medium text-neutral-300 uppercase tracking-wider">{stat.label}</span>
             </div>
           ))}
@@ -76,9 +76,9 @@ export function SocialProofSection() {
               {/* Body (Result) */}
               <div className="p-6 flex flex-col items-center text-center flex-1 border-b border-slate-100">
                 <span className="text-sm font-medium text-slate-500 uppercase tracking-wider mb-2">Resultado</span>
-                <span className="text-3xl font-extrabold text-emerald-600 mb-2">{caseItem.result}</span>
+                <span className="text-3xl font-extrabold text-primary-800 mb-2">{caseItem.result}</span>
                 <div className="flex items-center gap-2 text-sm text-slate-600 font-medium">
-                  <svg className="w-4 h-4 text-emerald-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <svg className="w-4 h-4 text-primary-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                   {caseItem.resolution}
                 </div>
               </div>
