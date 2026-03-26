@@ -5,6 +5,7 @@ import { LegalArgumentSection } from "@/components/sections/LegalArgumentSection
 import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { AuthoritySection } from "@/components/sections/AuthoritySection";
 import { Footer } from "@/components/ui/Footer";
 import { FloatingCTA } from "@/components/ui/FloatingCTA";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <SocialProofSection />
       <BenefitsSection />
       <FAQSection />
+      <AuthoritySection />
       <Footer />
       <FloatingCTA />
     </main>
