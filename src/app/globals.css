@@ -4,19 +4,21 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   
   /* Core Palette */
-  --color-primary-600: #2b6cb0;
-  --color-primary-800: #1a365d;
-  --color-primary-900: #0a2540;
+  --color-primary-100: #F0F2F5;
+  --color-primary-600: #7ddfef;
+  --color-primary-800: #5349b4;
+  --color-primary-900: #0b1f3a;
   
   --color-secondary-base: #25D366;
   --color-secondary-hover: #1EBE5D;
 
-  --color-neutral-50:  #f8fafc;
-  --color-neutral-100: #f1f5f9;
-  --color-neutral-200: #e2e8f0;
-  --color-neutral-300: #cbd5e1;
-  --color-neutral-800: #1e293b;
-  --color-neutral-900: #0f172a;
+  --color-neutral-50:  #F0F2F5;
+  --color-neutral-100: #e4e7ed;
+  --color-neutral-200: #d1d7e0;
+  --color-neutral-300: #b0b9c6;
+  --color-neutral-800: #3d4450;
+  --color-neutral-900: #2B2B2B;
+
   
   /* Typography Scale */
   --text-xs: 0.75rem;

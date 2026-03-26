@@ -25,7 +25,7 @@ export function HeroSection() {
             </h1>
             <p className="text-lg text-neutral-900 max-w-[600px] mx-auto">
               Tenés derecho a reclamar aguinaldo, vacaciones y horas extras que nunca te pagaron.{" "}
-              <span className="text-primary-600 block sm:inline font-semibold mt-1 sm:mt-0">
+              <span className="text-primary-800 block sm:inline font-semibold mt-1 sm:mt-0">
                 Si no ganamos, no cobramos nada.
               </span>
             </p>
