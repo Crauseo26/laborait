@@ -19,9 +19,9 @@ export function LegalArgumentSection() {
               <p>
                 <strong>Uber, Cabify y PedidosYa operan como si fueran tus jefes:</strong> te dicen cómo trabajar, cuánto cobrar y te pueden suspender cuando quieren.
               </p>
-              <div className="bg-white p-4 rounded-xl border-l-4 border-emerald-500 shadow-sm">
+              <div className="bg-white p-4 rounded-xl border-l-4 border-primary-800 shadow-sm">
                 <p className="font-semibold text-slate-900">
-                  Para la ley laboral uruguaya, eso tiene un nombre: <span className="text-emerald-600">relación de dependencia.</span>
+                  Para la ley laboral uruguaya, eso tiene un nombre: <span className="text-primary-800">relación de dependencia.</span>
                 </p>
               </div>
               <p>
@@ -29,7 +29,7 @@ export function LegalArgumentSection() {
               </p>
               
               <div className="flex items-start space-x-3 text-sm md:text-base bg-slate-100 p-4 rounded-lg mt-4 text-slate-600">
-                <svg className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                <svg className="w-6 h-6 text-primary-800 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
                 <p>
                   La justicia laboral uruguaya ya reconoció esta situación en decenas de casos. No es un vacío legal ni una teoría: es <strong>jurisprudencia establecida</strong>.
                 </p>
@@ -38,7 +38,7 @@ export function LegalArgumentSection() {
 
             {/* Right Column: Amounts */}
             <div className="flex flex-col w-full bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden transform transition duration-500 hover:shadow-xl">
-              <div className="bg-emerald-600 px-6 py-4 flex items-center justify-between text-white">
+              <div className="bg-primary-900 px-6 py-4 flex items-center justify-between text-white">
                 <h3 className="font-semibold text-lg flex items-center gap-2">
                   <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
                   Montos Referenciales
@@ -59,11 +59,11 @@ export function LegalArgumentSection() {
 
                 <div className="flex flex-col pb-2">
                   <span className="text-sm font-medium text-slate-500 uppercase tracking-wider mb-1">Choferes con más de 5 años</span>
-                  <span className="text-2xl md:text-3xl font-bold text-emerald-600">hasta USD 50.000+</span>
+                  <span className="text-2xl md:text-3xl font-bold text-primary-800">hasta USD 50.000+</span>
                 </div>
 
                 <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-600 border border-slate-100 flex items-start gap-3 mt-2">
-                  <svg className="w-5 h-5 text-emerald-500 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                  <svg className="w-5 h-5 text-primary-800 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
                   <p>Estos montos incluyen el bloqueo como despido. <strong>Si te bloquearon, reclamás más.</strong></p>
                 </div>
 
@@ -74,10 +74,10 @@ export function LegalArgumentSection() {
           {/* Secondary CTA */}
           <div className="mt-16 text-center">
             <Link 
-              href="https://wa.me/message/XXXX" // TODO: Add real WhatsApp link or use the global CTA trigger
-              className="group inline-flex items-center text-lg md:text-xl font-medium text-emerald-600 hover:text-emerald-700 transition duration-300"
+              href="https://wa.me/message/XXXX"
+              className="group inline-flex items-center text-lg md:text-xl font-medium text-primary-800 hover:text-primary-900 transition duration-300"
             >
-              <span className="border-b border-emerald-200 group-hover:border-emerald-600 pb-1 transition duration-300">
+              <span className="border-b border-primary-800/30 group-hover:border-primary-800 pb-1 transition duration-300">
                 ¿Querés saber cuánto podrías reclamar vos? <span className="font-bold">→ Escribinos y lo calculamos gratis.</span>
               </span>
             </Link>

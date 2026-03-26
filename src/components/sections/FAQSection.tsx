@@ -47,7 +47,7 @@ export function FAQSection() {
             </h3>
             <Link 
               href="https://wa.me/message/XXXX"
-              className="group inline-flex items-center text-lg md:text-xl font-bold text-white transition duration-300 bg-emerald-600 hover:bg-emerald-700 px-6 md:px-8 py-4 rounded-xl shadow-md hover:shadow-lg text-center leading-snug"
+              className="group inline-flex items-center text-lg md:text-xl font-bold text-white transition duration-300 bg-primary-900 hover:bg-primary-800 px-6 md:px-8 py-4 rounded-xl shadow-md hover:shadow-lg text-center leading-snug"
             >
               → Escribinos por WhatsApp — sin formularios, sin turnos, sin compromiso.
             </Link>
