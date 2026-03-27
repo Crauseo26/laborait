@@ -32,22 +32,37 @@ export function MirrorSection() {
   };
 
   return (
-    <section className="w-full bg-primary-900 py-16 md:py-24 overflow-hidden shadow-inner">
+    <section className="w-full bg-neutral-50 py-16 md:py-24 relative -mt-px">
+      {/* Wave divider — top edge, Hero color bleeds into this section */}
+      <div className="absolute -top-px left-0 w-full overflow-hidden leading-[0] pointer-events-none">
+        <svg
+          viewBox="0 0 390 109"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-[60px] md:h-[90px]"
+          aria-hidden="true"
+        >
+          <path
+            d="M390 0V10.2681C389.565 15.0151 388.613 19.1577 387.75 22.6299C386.311 28.4146 383.998 33.1362 380.812 36.7949C377.569 40.1167 373.341 42.7407 368.129 44.6665C362.917 46.5923 356.946 48.1279 350.217 49.2734L0 109V0H390Z"
+            fill="#0B1F3A"
+          />
+        </svg>
+      </div>
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-8 md:mb-12 leading-tight text-balance">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 mb-8 md:mb-12 leading-tight text-balance">
             Sabemos exactamente lo que estas pensando ahora mismo.
           </h2>
 
           {/* Slider Container with fixed height to prevent CLS */}
-          <div className="relative w-full h-[120px] sm:h-[140px] md:h-[160px] flex items-center justify-center my-4 md:my-8 bg-primary-800/30 rounded-2xl border border-primary-800/50 p-6 shadow-sm overflow-hidden">
+          <div className="relative w-full h-[120px] sm:h-[140px] md:h-[160px] flex items-center justify-center my-4 md:my-8 bg-neutral-200/60 rounded-2xl border border-neutral-300/60 p-6 shadow-sm overflow-hidden">
             {QUOTES.map((quote, idx) => (
               <div
                 key={idx}
                 className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out p-4 md:p-8 ${getSlideClass(idx)}`}
               >
-                <p className="text-xl md:text-2xl lg:text-3xl italic font-medium text-neutral-400 tracking-wide text-balance">
+                <p className="text-xl md:text-2xl lg:text-3xl italic font-medium text-neutral-500 tracking-wide text-balance">
                   &ldquo;{quote}&rdquo;
                 </p>
               </div>
@@ -55,10 +70,10 @@ export function MirrorSection() {
           </div>
 
           <div className="mt-8 md:mt-12 max-w-3xl leading-relaxed text-balance">
-            <p className="text-[1.1rem] md:text-xl text-neutral-300">
+            <p className="text-[1.1rem] md:text-xl text-neutral-700">
               Esos miedos son razonables y son exactamente los que tenian los mas de 70 choferes que hoy ya cobraron su reclamo.
             </p>
-            <p className="text-[1.1rem] md:text-xl text-primary-600 mt-2 md:mt-3">
+            <p className="text-[1.1rem] md:text-xl text-primary-800 mt-2 md:mt-3">
               La diferencia entre ellos y los que no cobraron nada fue una sola: <span className="font-bold">decidieron averiguar.</span>
             </p>
           </div>
