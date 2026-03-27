@@ -15,17 +15,17 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 
 export function HeroSection() {
   return (
-    <section id="hero-section" className="w-full bg-neutral-50 py-16 md:py-24">
+    <section id="hero-section" className="w-full bg-primary-900 py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center max-w-4xl mx-auto text-center gap-8">
           {/* Text Content */}
           <div className="w-full space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-900 leading-[1.15]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15]">
               Te bloquearon la cuenta.<br />Podés reclamar hasta USD 50.000.
             </h1>
-            <p className="text-lg text-neutral-900 max-w-[600px] mx-auto">
+            <p className="text-lg text-white/80 max-w-[600px] mx-auto">
               Tenés derecho a reclamar aguinaldo, vacaciones y horas extras que nunca te pagaron.{" "}
-              <span className="text-primary-800 block sm:inline font-semibold mt-1 sm:mt-0">
+              <span className="text-primary-600 block sm:inline font-semibold mt-1 sm:mt-0">
                 Si no ganamos, no cobramos nada.
               </span>
             </p>
@@ -35,11 +35,11 @@ export function HeroSection() {
                 Escribinos ahora — es gratis
               </Button>
               
-              <div className="flex flex-row flex-wrap items-center justify-center gap-3 mt-6 text-sm text-neutral-600 font-medium tracking-wide">
+              <div className="flex flex-row flex-wrap items-center justify-center gap-3 mt-6 text-sm text-white/60 font-medium tracking-wide">
                 <span>+70 casos ganados</span>
-                <span className="text-neutral-300 mx-1">•</span>
+                <span className="text-white/20 mx-1">•</span>
                 <span>100% de efectividad</span>
-                <span className="text-neutral-300 mx-1">•</span>
+                <span className="text-white/20 mx-1">•</span>
                 <span>Consulta confidencial</span>
               </div>
             </div>
