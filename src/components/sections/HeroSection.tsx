@@ -15,7 +15,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 
 export function HeroSection() {
   return (
-    <section id="hero-section" className="w-full bg-primary-900 py-16 md:py-24">
+    <section id="hero-section" className="w-full bg-primary-900 py-16 md:py-24 relative">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center max-w-4xl mx-auto text-center gap-8">
           {/* Text Content */}
@@ -45,6 +45,22 @@ export function HeroSection() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Wave divider — bottom edge, transitions into the next section */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] translate-y-[1px]">
+        <svg
+          viewBox="0 0 390 109"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-[60px] md:h-[90px]"
+          aria-hidden="true"
+        >
+          <path
+            d="M390 0V10.2681C389.565 15.0151 388.613 19.1577 387.75 22.6299C386.311 28.4146 383.998 33.1362 380.812 36.7949C377.569 40.1167 373.341 42.7407 368.129 44.6665C362.917 46.5923 356.946 48.1279 350.217 49.2734L0 109V0H390Z"
+            fill="#0B1F3A"
+          />
+        </svg>
       </div>
     </section>
   );
