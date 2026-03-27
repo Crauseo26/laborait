@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { Logo } from "@/components/ui/Logo";
 import { LogoLight } from "@/components/ui/LogoLight";
-import { LogoMini } from "@/components/ui/LogoMini";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,44 +26,22 @@ export function Header() {
           : "bg-primary-900 border-b border-transparent"
       }`}
     >
-      <div className="container mx-auto relative h-16 pointer-events-none">
-
-        {/* Animated Logo Container */}
-        <div
-          className="absolute flex items-center transition-all duration-500 ease-in-out pointer-events-auto"
-          style={{
-            top: "50%",
-            left: scrolled ? "16px" : "50%",
-            transform: scrolled
-              ? "translateY(-50%)"
-              : "translate(-50%, -50%)"
-          }}
-        >
-          {/* Transition Wrapper */}
-          <div className={`relative flex items-center overflow-hidden transition-all duration-500 ease-in-out ${scrolled ? "w-8 h-8" : "w-40 sm:w-40 h-8"
-            }`}>
-
-            {/* Isotipo (Mini Logo) - Hidden initially, appears on scroll */}
-            <LogoMini
-              className={`absolute top-0 left-0 w-8 h-8 shrink-0 transition-opacity duration-500 ease-in-out ${scrolled ? "opacity-100" : "opacity-0"
-                }`}
-            />
-
-            {/* Logotipo Light - Visible on dark unscrolled header */}
-            <LogoLight
-              className={`absolute top-0 left-0 h-8 w-auto shrink-0 transition-opacity duration-500 ease-in-out ${scrolled ? "opacity-0" : "opacity-100"
-                }`}
-            />
-
-            {/* Logotipo Dark - Fades in when scrolled (glassmorphism bg) */}
-            <Logo
-              className={`absolute top-0 left-0 h-8 w-auto shrink-0 transition-opacity duration-500 ease-in-out ${scrolled ? "opacity-0" : "opacity-0"
-                }`}
-            />
-
-          </div>
+      <div className="container mx-auto h-16 flex items-center justify-center">
+        {/* Logo — always centered, swaps color variant on scroll */}
+        <div className="relative h-8 w-40">
+          {/* Light version — visible on dark header */}
+          <LogoLight
+            className={`absolute inset-0 h-8 w-auto transition-opacity duration-500 ${
+              scrolled ? "opacity-0" : "opacity-100"
+            }`}
+          />
+          {/* Dark version — visible on glassmorphism header */}
+          <Logo
+            className={`absolute inset-0 h-8 w-auto transition-opacity duration-500 ${
+              scrolled ? "opacity-100" : "opacity-0"
+            }`}
+          />
         </div>
-
       </div>
     </header>
   );
